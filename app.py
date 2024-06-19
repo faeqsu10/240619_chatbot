@@ -45,6 +45,3 @@ if api_key:
             )
             response = st.write_stream(stream)
         st.session_state.messages.append({"role": "assistant", "content": response})
-
-else:
-    st.warning("API 키를 입력해주세요.")
